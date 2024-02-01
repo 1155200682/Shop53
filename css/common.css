@@ -1,0 +1,112 @@
+*{box-sizing: border-box;}
+p,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,form,table,a,div,img{
+	margin:0;
+	padding:0;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.clearfix:before,.clearfix:after{display: block; content: ""}
+.clearfix:after{clear:both;}
+body{
+	background-color: #f7efef;
+}
+nav .crumb {
+    display: inline-block;
+  }
+  .crumb a::after {
+    display: inline-block;
+    color: #2a3bd6;
+    content: '>';
+    font-size: 80%;
+    font-weight: bold;
+    padding: 0 10px;
+  }
+header{
+	width: 1250px;
+	margin:0 auto;
+	position: relative;
+	padding-top:16px;
+}
+.shopping-cart-content,
+.checkout-button {
+  display: none; /* 默认不显示 */
+  position:relative; /* 绝对定位，可以根据需要调整位置 */
+  z-index: 10;
+  width: 500px;
+}
+header .img1{
+	position: absolute;
+	left: 56px;
+}
+header .nav1{	
+	position: absolute;
+	left:950px;
+	border-radius:5px;
+	padding:0 5px;
+	background-color:#86b2e9;
+	width: 300px;
+	display: flex;
+	z-index: 5;
+}
+header .nav1 li{
+	width: 100%;
+	color:#f4ebda;
+	line-height: 27px;
+	text-align: center;
+}
+header .nav1 li:hover{
+	background-color: rgba(58, 62, 66, 0.5);
+	border-radius: 5px;
+}
+header .nav1 li .cart:hover .shopping-cart-content,
+header .nav1 li .cart:hover .checkout-button {
+  display: block; /* 显示内容 */
+  /* 这里可以添加其他样式，如背景颜色、边框等 */
+  color: #0c0600;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: #f1ecef;
+  width: 150px;
+  height: auto;
+}
+header .nav1 li:hover a{
+	color: rgb(228, 233, 235);
+}
+header .nav1 li a{
+	display: inline-block;
+	margin:0 16px;
+	font-size: 14px;
+	line-height:27px;
+	color:#113142;
+	display: block;
+}
+header .nav2{
+	width: 100%;
+	margin: 20px auto;
+	height: 50px;
+	background-color: #4373d3;
+	background-size: 1250px 88px;
+	display:flex;
+}
+header .nav2 li{
+	width: 145px;
+	text-align:center;
+	line-height: 50px;
+	width: 100%;
+}
+header .nav2 li:hover{
+	background-color: rgba(0,0,0,0.3);
+}
+header .nav2 li a{
+	display: inline-block;
+	line-height: 49px;
+	font-size: 16px;
+	color: #f7ecf4;
+}
+header .nav2 li a:hover{
+	color:lightgray;
+}
